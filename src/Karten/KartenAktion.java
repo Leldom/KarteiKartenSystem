@@ -10,7 +10,8 @@ public class KartenAktion{
         String beschreibung = scan.nextLine();
         
         
-        Karteikarte karte = new Karteikarte(titel, beschreibung, nummerierung);
+        Karteikarte karte = new Karteikarte(titel, beschreibung);
+        speicherKarte(karte);
     }
     public static void loescheKarte() {
         
@@ -18,7 +19,7 @@ public class KartenAktion{
     public static void leseKarte() {
         
     }
-    public static void speicherKarte() {
-        Karteikarte[] karteinSpeicher = new Karteikarte[0];
+    public static void speicherKarte(Karteikarte karte) {
+        
     }
 }

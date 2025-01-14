@@ -4,20 +4,22 @@ package Karten;
 public class Karteikarte {
     private String titel;
     private String beschreibung;
-//    private int nummerierung;
    
-    Karteikarte(String titel_, String beschreibung_){
+    Karteikarte(String titel, String beschreibung){
         this.titel = titel;
         this.beschreibung = beschreibung;
-//        this.nummerierung = nummerierung;
     }
     public String getTitel() {
         return titel;
     }
+    public void setTitel(String titel) {
+        this.titel = titel;
+    }
+    
     public String getBeschreibung() {
         return beschreibung;
     }
-//    public int getNummerierung() {
-//        return nummerierung;
-//    }
+    public void setBeschreibung(String beschreibung) {
+        this.beschreibung = beschreibung;
+    }
 }

@@ -8,19 +8,18 @@ public class Main {
         start.checkInput();
     }
     void checkInput() {
-        System.out.println("Herzlich Wilkommen. Möchtest du eine Karteikarte erstellen(e), löschen(d) oder lesen(l)?");
-        System.out.println("e, d, l: ");
+        System.out.println("Herzlich Wilkommen. Moechtest du eine Karteikarte erstellen(e), oder abbrechen(q)?");
+        System.out.println("e, q: ");
         
-        Scanner scan = new Scanner(System.in, "Windows-1252");
+        Scanner scan = new Scanner(System.in);
         char c = scan.next().charAt(0);
         
-            switch(c) {
-//                case 'e'-> erstelleKarte();
-//                case 'd'-> loescheKarte();
-//                case 'l'-> leseKarte();
+            switch(c) { 
+                case 'e'-> KartenAktion.erstelleKarte();
+                case 'q'-> {System.out.print("Erstellung abgebrochen "); System.exit(0);} 
                 default -> {
                    System.out.println("falscher Wert. Bitte neu eingeben: ");
-                    checkInput();    
+                   checkInput();    
                 }
             }
     }
